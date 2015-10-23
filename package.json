@@ -1,0 +1,38 @@
+{
+  "name": "swift-ceph",
+  "author": "Ágúst Ingi Kjartansson",
+  "version": "0.1.8",
+  "description": "CEPH Object Storage(Swift) REST client API for Node.JS",
+  "homepage": "http://github.com/edge-is/swift-ceph",
+  "keywords": [
+    "Swift",
+    "Ceph",
+    "Object Storage"
+  ],
+  "main": "lib/ceph-swift",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "request": "^2.65.0",
+    "sync-request": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:edge-is/ceph-swift.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/edge-is/ceph-swift/issues"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
