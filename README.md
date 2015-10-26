@@ -16,14 +16,20 @@ Works with CEPH!
       , url: 'http://swift.server.com'
       , checksum : true
       , strictSSL : true
+      , authenticationpath : 'path/to/authentication' /* Default to /auth/1.0 */
+      , checksum : true /* Send Etag and compare ETag on download? */
+      , strictSSL : true /* Default to true*/
+      , cache : { /* Cache params, default to true , take in ttl and file */
+        ttl : 100
+      }
     });
 
     // Authentication
-    client.listContainers(callback);
+    client.listContainers(/*optional query object*/, callback);
     client.retrieveAccountMetadata(callback);
 
     // Storage Services
-    client.listObjects("containerName", callback);
+    client.listObjects("containerName", { foo: 'bar' } /*query params optinal */,  callback);
     client.createContainer("containerName", callback);
     client.deleteContainer("containerName", callback);
     client.retrieveContainerMetadata("containerName", callback);

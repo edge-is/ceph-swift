@@ -1,7 +1,7 @@
 {
   "name": "swift-ceph",
   "author": "Ágúst Ingi Kjartansson",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CEPH Object Storage(Swift) REST client API for Node.JS",
   "homepage": "http://github.com/edge-is/swift-ceph",
   "keywords": [
